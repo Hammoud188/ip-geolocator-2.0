@@ -9,7 +9,7 @@
 	<developers>
 		<developer>
 			<id>Hammoud</id>
-			<name>Hammoud188</name>
+			<name>Hammoud Khalaf</name>
 			<email>hammoudkhalaf7@gmail.com</email>
 			<organization>Faculty of Informatics, University of Debrecen</organization>
 			<organizationUrl>http://www.inf.unideb.hu/</organizationUrl>
@@ -47,12 +47,7 @@
 			<version>${jackson-databind.version}</version>
 			<scope>compile</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.18</version>
-			<scope>compile</scope>
-		</dependency>
+		
 	</dependencies>
 	<build>
 		<plugins>
@@ -69,19 +64,7 @@
 					<mainClass>${mainClass}</mainClass>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.projectlombok</groupId>
-				<artifactId>lombok-maven-plugin</artifactId>
-				<version>1.18.16.0</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>delombok</goal>
-						</goals>
-						<phase>generate-sources</phase>
-					</execution>
-				</executions>
-			</plugin>
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
